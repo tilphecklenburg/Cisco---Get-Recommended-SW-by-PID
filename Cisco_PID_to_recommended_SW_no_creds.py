@@ -1,12 +1,13 @@
 import requests
 import json
 import sqlite3
-
-'''references
-
-https://apiconsole.cisco.com/oauth#clientcredentials
-
-https://developer.byu.edu/docs/consume-api/use-api/oauth-20/oauth-20-python-sample-code
+'''
+Generates SQLite DB table of product IDs and their latest recommended software versions, using Cisco recommended software support API.
+'''
+'''*** IMPORTANT NOTE ***
+To generate an authorization token via oauth2 client credential flow, client ID and client secret must be provided by the user of this script.
+OAuth2 client credentials can be gathered in the Cisco API console, once you have been granted access through your organization.
+This script will not work without valid OAUTH2 client credentials from the Cisco API console.
 
 '''
 #initialize variables and database connection
