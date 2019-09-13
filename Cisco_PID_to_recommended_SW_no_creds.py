@@ -15,10 +15,6 @@ swsuggestionbaseurl='https://api.cisco.com/software/suggestion/v2/suggestions/so
 pidlist = open("pid_list.txt")
 pidlist=pidlist.read()
 pidlist = pidlist.split("\n")
-#c.execute("SELECT * FROM cmdb WHERE pid='N9K-C9336C-FX2-B2'")
-#print(c.fetchone())
-
-#pid=input("enter base pid for suggested version (examples: CISCO2811, N9K-C9336C-FX2-B2): ")
 
 def generate_access_token():
 	#generates and returns access token for API calls, using client_credentials oauth2 grant type
